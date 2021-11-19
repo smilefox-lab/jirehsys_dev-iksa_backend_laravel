@@ -1,0 +1,9 @@
+{
+    "name": "Career",
+    "namespace": "Botble\\Career\\",
+    "provider": "Botble\\Career\\Providers\\CareerServiceProvider",
+    "author": "Sang Nguyen",
+    "url": "https://sangnguyen.info",
+    "version": "1.0",
+    "description": "The description for plugin career"
+}

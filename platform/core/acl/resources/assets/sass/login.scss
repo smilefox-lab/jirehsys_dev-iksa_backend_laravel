@@ -1,0 +1,120 @@
+$body-bg: #1e2025;
+
+body {
+    &.login {
+        background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -webkit-background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: $body-bg;
+
+        .faded-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(50, 50, 50, .5);
+            background: linear-gradient(to bottom, rgba(21, 21, 28, 0) 0, rgba(21, 21, 28, .1) 40%, rgba(21, 21, 28, .3) 55%, rgba(21, 21, 28, .61) 75%, #15151c 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0015151c', endColorstr='#15151c', GradientType=0);
+        }
+
+        .logo-title-container {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        .logo {
+            height: auto;
+            margin: 30px auto 15px;
+            padding-top: 25px;
+            max-height: 80px;
+        }
+
+        .copy {
+            width: auto;
+            padding: 30px 30px 12px;
+
+            h1 {
+                display: inline-block;
+                vertical-align: middle;
+                color: #fff;
+                z-index: 9999;
+                position: relative;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 700;
+                top: 0;
+                line-height: 45px;
+                margin: 20px 0 0 14px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 13px;
+                max-width: 650px;
+                opacity: .9;
+                z-index: 99;
+                font-weight: 300;
+                margin-top: 0;
+                left: 15px;
+                position: relative;
+                top: -8px;
+            }
+        }
+
+        .row.auth-container {
+            justify-content: center;
+        }
+
+        .login-sidebar {
+            min-height: 100vh;
+            display: flex;
+            z-index: 2;
+            padding: 0;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            align-items: center;
+            background: $body-bg;
+        }
+
+        .login-container {
+            width: 370px;
+            p {
+                text-align: left;
+                font-weight: 700;
+                margin-bottom: 0;
+                margin-top: 3px;
+                color: #757C85;
+                border-radius: 2px;
+                font-size: 10px;
+                text-transform: uppercase;
+                width: auto;
+                padding-left: 2px;
+            }
+
+            form {
+                padding-top: 15px;
+
+                p {
+                    text-transform: none;
+                    font-weight: 400;
+                }
+            }
+            .btn-primary {
+                padding: 0.5rem 40px;
+                border-radius: 20px;
+            }
+
+            .lost-pass-link {
+                color: #b8b8b8;
+            }
+        }
+    }
+}

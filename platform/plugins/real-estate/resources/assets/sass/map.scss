@@ -1,0 +1,26 @@
+.gm-style {
+    .controls {
+        button {
+            border: 0;
+            background-color: white;
+            color: rgba(0, 0, 0, 0.6);
+
+            &:hover {
+                color: rgba(0, 0, 0, 0.9);
+            }
+        }
+
+
+        &.zoom-control {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
+            button {
+                font: 0.85em Roboto;
+                margin: 1px;
+                padding: 0;
+            }
+        }
+    }
+}

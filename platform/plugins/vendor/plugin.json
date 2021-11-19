@@ -1,0 +1,9 @@
+{
+  "name": "Vendor",
+  "namespace": "Botble\\Vendor\\",
+  "provider": "Botble\\Vendor\\Providers\\VendorServiceProvider",
+  "author": "Sang Nguyen",
+  "url": "https://sangnguyen.info",
+  "version": "4.0",
+  "description": "Manage vendor, user register/login"
+}

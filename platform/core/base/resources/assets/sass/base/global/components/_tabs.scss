@@ -1,0 +1,122 @@
+/***
+Customized Bootstrap Tabs
+***/
+
+/* Tabs and pills */
+
+.nav-tabs,
+.nav-pills {
+    margin-bottom: 10px;
+
+    > li {
+        > a {
+            font-size: 14px;
+
+            > .badge {
+                margin-top: -6px;
+            }
+
+            @include border-radius($general-border-radius $general-border-radius 0 0);
+        }
+
+        .dropdown-menu {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &.nav-tabs-sm,
+    &.nav-pills-sm {
+        > li > a {
+            font-size: 13px;
+        }
+    }
+
+    .dropdown.open {
+        > .dropdown-toggle {
+            background: #eeeeee;
+            color: #0d638f;
+            border-color: transparent;
+        }
+    }
+}
+
+/* Left and right tabs */
+
+.tabs-right.nav-tabs,
+.tabs-left.nav-tabs {
+    border-bottom: 0;
+
+    > li {
+        float: none;
+
+        > a {
+            margin-right: 0;
+        }
+    }
+}
+
+/***
+Custom tabs
+***/
+
+/* In BS3.0.0 tabbable class was removed. We had to added it back */
+
+.tabbable {
+    @include clearfix();
+}
+
+.tabbable-custom {
+    margin-bottom: 15px;
+    padding: 0;
+
+    .nav-tabs {
+
+        .nav-link {
+            border: none;
+        }
+        .nav-link:hover,
+        .nav-link:focus {
+            border: none;
+        }
+    }
+
+    > .nav-tabs {
+        border: none;
+        margin: 0;
+
+        > li {
+            background-color: lighten($form-bg, 8);
+            @include border-radius($general-border-radius $general-border-radius 0 0);
+
+            &:not(:first-of-type) {
+                margin-left: 2px;
+            }
+
+            > a {
+
+                margin-right: 0;
+                color: darken($text-color, 15);
+
+                &.active {
+                    color: #ffffff;
+                    background-color: $form-bg;
+                    border: none;
+                    margin-top: 0;
+                    @include border-radius($general-border-radius $general-border-radius 0 0);
+                }
+            }
+        }
+
+
+    }
+
+    > .tab-content {
+        background-color: $form-bg;
+        padding: 1rem;
+
+        @include border-radius(0 $general-border-radius $general-border-radius $general-border-radius);
+    }
+}
